@@ -21,6 +21,10 @@ I wanted to ensure that as much of the neural model's architecture remained the 
 
 While it is possible that these differences will disrupt my final results, I don't think there is a feasible way to avoid them, as each optimizer uses different parameters for different reasons. Learning rate, for instance, has a vastly different effect for most of the optimizers, so it had to be manually adjusted at times to allow the optimizers to perform to their strengths. Again, all of these adjustments will be noted below.
 
+<h1>Dataset</h1>
+
+As this project was built around the Spring 2022 Kaggle Bird Species Classification challenge, my dataset is the given one from that challenge. If you'd like to learn more, check [here](https://www.kaggle.com/competitions/birds22sp/data).
+
 <h1>Hyperparameters</h1>
 
 For the most part, the following hyperparameters remained consistent throughout all experiments:
@@ -95,7 +99,13 @@ Each of the optimization algorithms I've explored has some niche where it can be
 
 The main take-away I've had from this project is that it is crucial to thoroughly understand the optimizer you plan to use, and to be aware of both its strengths and weaknesses before blindly applying it to your model. It took a long time to make sense of the intricacies of each optimizer to get them to work meaningfully, and I still struggle to understand some of the anomalies in my data (like the jump in the AdaDelta losses), but this project has allowed me to develop a much greater understanding in CNN optimization.
 
+<h1>Video Summary</h1>
+
+A summary of this assignment can be found [here](https://youtu.be/Ny6DAJfAYTc)
+
 <h1>Works Cited</h1>
+
+"Kaggle Bird Classification Challenge". [https://www.kaggle.com/competitions/birds22sp](https://www.kaggle.com/competitions/birds22sp)
 
 "PyTorch Adam Documentation". [https://pytorch.org/docs/stable/generated/torch.optim.Adam.html](https://pytorch.org/docs/stable/generated/torch.optim.Adam.html)
 
